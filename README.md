@@ -12,7 +12,7 @@
 
 
 
-Pour lancer le progamme une fois gitcloné :
+Pour lancer le programme une fois gitcloné :
 
 ```
 
