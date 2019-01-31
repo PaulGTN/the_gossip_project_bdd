@@ -2,9 +2,9 @@
 
   <h2>Contenu</h2>
 
-  ### 1- 6 models
+  ### 1- 8 models
 
-  ### 2- 6 migrates correspondants
+  ### 2- 8 migrates correspondants
 
   ### 3- Un beau seed pour mélanger tout ça
 

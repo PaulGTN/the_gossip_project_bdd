@@ -8,6 +8,8 @@ Gossip.destroy_all
 Tag.destroy_all
 GossipTag.destroy_all
 PrivateMessage.destroy_all
+Comment.destroy_all
+Like.destroy_all
 
 10.times do
   city = City.create!(name: Faker::Address.unique.city, zip_code: Faker::Address.unique.zip_code)
@@ -32,3 +34,12 @@ end
 10.times do
   private_message = PrivateMessage.create!(content: Faker::BojackHorseman.tongue_twister, sender_id: (rand(User.first.id..User.last.id)), recipient_id: (rand(User.first.id..User.last.id)))
 end
+
+20.times do 
+  comment = Comment.create!(content: Faker::FamilyGuy.quote, user_id: (rand(User.first.id..User.last.id)), gossip_id: (rand(Gossip.first.id..Gossip.last.id)))
+end
+
+20.times do
+  like = Like.create!(user_id: (rand(User.first.id..User.last.id)), gossip_id: (rand(Gossip.first.id..Gossip.last.id)), comment_id: (rand(Comment.first.id..Comment.last.id)))
+end
+
